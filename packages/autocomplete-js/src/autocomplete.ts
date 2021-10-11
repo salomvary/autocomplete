@@ -360,7 +360,7 @@ export function autocomplete<TItem extends BaseItem>(
           dom.value.detachedOverlay
         );
         props.value.core.environment.document.body.classList.add('aa-Detached');
-        focusAndOpenKeyboard(dom.value.input);
+        focusAndOpenKeyboard(dom.value.input, 300);
       } else {
         props.value.core.environment.document.body.removeChild(
           dom.value.detachedOverlay
