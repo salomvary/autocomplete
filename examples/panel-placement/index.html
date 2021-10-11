@@ -25,12 +25,20 @@
       <label for="end">end</label>
       <input type="radio" value="full-width" name="placement" />
       <label for="full-width">full-width</label>
+      <input type="checkbox" name="panel-container" />
+      <label for="full-width">Custom panelContainer</label>
+      <input type="checkbox" name="positioned" />
+      <label for="full-width">Positioned</label>
     </form>
 
-    <div class="container">
-      <div id="autocomplete-left"></div>
-      <div id="autocomplete"></div>
-      <div id="autocomplete-right"></div>
+    <div id="wrapper">
+      <div class="container">
+        <div id="autocomplete-left"></div>
+        <div id="autocomplete"></div>
+        <div id="autocomplete-right"></div>
+      </div>
+
+      <div id="panel-container"></div>
     </div>
 
     <script src="env.ts"></script>

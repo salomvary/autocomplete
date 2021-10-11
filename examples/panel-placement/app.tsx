@@ -112,3 +112,36 @@ document
       searchRight.update({ panelPlacement });
     });
   });
+
+document
+  .querySelectorAll<HTMLInputElement>('input[name="panel-container"]')
+  .forEach((checkbox) => {
+    checkbox.addEventListener('change', (event) => {
+      const target = event.target as HTMLInputElement;
+
+      if (target.checked) {
+        search.update({ panelContainer: '#panel-container' });
+        searchLeft.update({ panelContainer: '#panel-container' });
+        searchRight.update({ panelContainer: '#panel-container' });
+      } else {
+        search.update({ panelContainer: undefined });
+        searchLeft.update({ panelContainer: undefined });
+        searchRight.update({ panelContainer: undefined });
+      }
+    });
+  });
+
+document
+  .querySelectorAll<HTMLInputElement>('input[name="positioned"]')
+  .forEach((checkbox) => {
+    checkbox.addEventListener('change', (event) => {
+      const target = event.target as HTMLInputElement;
+      const wrapper = document.getElementById('wrapper');
+
+      if (target.checked) {
+        wrapper.classList.add('positioned');
+      } else {
+        wrapper.classList.remove('positioned');
+      }
+    });
+  });

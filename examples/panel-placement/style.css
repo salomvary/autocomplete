@@ -24,3 +24,9 @@ body {
 .action {
   align-content: center;
 }
+
+.positioned {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
