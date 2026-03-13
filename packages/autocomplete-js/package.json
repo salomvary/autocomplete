@@ -1,7 +1,7 @@
 {
-  "name": "@algolia/autocomplete-js",
+  "name": "@salomvary/autocomplete-js",
   "description": "Fast and fully-featured autocomplete JavaScript library.",
-  "version": "1.19.6",
+  "version": "1.19.6-salomvary",
   "license": "MIT",
   "homepage": "https://github.com/algolia/autocomplete",
   "repository": "algolia/autocomplete",
